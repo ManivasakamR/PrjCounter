@@ -127,7 +127,7 @@
             $(document).ready(function(){
                 $("#load").hide();        
             });     
-            function clickEvt(){                                                     
+            function clickEvt(){                                                      
             var burl=document.getElementById('it1').value; 
             if(burl==""){
             alert('Please enter blog name');
@@ -136,7 +136,7 @@
             {
             $("#load").show();                 
             var burl=burl.replace(" ", "-");                            
-            var nurl='http://franmed.herokuapp.com/'+burl;                      
+            var nurl='franmed.herokuapp.com/'+burl;                      
             $("#d1s").removeClass("cen");                        
             document.getElementById('exh').innerHTML="";                    
             gdtmedium(nurl);            
