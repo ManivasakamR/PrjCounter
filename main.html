@@ -127,7 +127,7 @@
             $(document).ready(function(){
                 $("#load").hide();        
             });     
-            function clickEvt(){                                                                  
+            function clickEvt(){                                                     
             var burl=document.getElementById('it1').value; 
             if(burl==""){
             alert('Please enter blog name');
@@ -146,7 +146,7 @@
             document.getElementById('tc1').innerHTML='';
             document.getElementById('stw').innerHTML='';
             document.getElementById('th').innerHTML='';
-            document.getElementById('dp1').innerHTML="<h2>If page takes more than 1 min to load. Open with other browser. </h>";
+            document.getElementById('dp1').innerHTML='';
             var q;
             var url1=url+'/archive';
             var url2=url+'/latest?limit=1000&';            
@@ -215,7 +215,7 @@
             for(var jl=0;jl<ch.length;jl++)
             {        
             //div.innerHTML += "<div class='row'><div class='col-xs-2'><ct id='sno'>"+(jl+1)+"</ct></div><div class='col-xs-6'><ct id='un1'>"+(nuna[jl])+"</ct></div><div class='col-xs-4'><ct id='uch'>"+(nch[jl])+"</ct><br></div></div>";            
-            //div.innerHTML += "<div class='row'><div class='col-xs-2'><ct id='sno'>"+(jl+1)+"</ct></div><div class='col-xs-8'><img style='max-width:25px; max-height:25px; border-radius:13px;' src='https://cdn-images-1.medium.com/fit/c/100/100/"+(niid[jl])+"'></img><ct id='un1'>&nbsp"+(nuna[jl])+"</ct></div><div class='col-xs-2'><ct id='uch'>"+(nch[jl])+"</ct><br></div></div>";                                    
+            div.innerHTML += "<div class='row'><div class='col-xs-2'><ct id='sno'>"+(jl+1)+"</ct></div><div class='col-xs-8'><img style='max-width:25px; max-height:25px; border-radius:13px;' src='https://cdn-images-1.medium.com/fit/c/100/100/"+(niid[jl])+"'></img><ct id='un1'>&nbsp"+(nuna[jl])+"</ct></div><div class='col-xs-2'><ct id='uch'>"+(nch[jl])+"</ct><br></div></div>";                                    
             }
             $("#load").hide();            
             document.getElementById('dp1').innerHTML="<h4 id='E1' class='Developer'>Developed By<a href='https://www.facebook.com/r.manivasakam' target='_blank' > Manivasakam R </a> </h4>"; 
